@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(45deg, rgb(0, 110, 255), black);
+    padding: 30px 0;
+}
+.calculator{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #bd4108;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+#display{
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font: normal 4rem serif;
+    overflow: hidden
+    
+}
+.buttons_calculator{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.calculator button{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+
+
+button:hover{
+    border: 2px solid black;
+    font-size: 2rem;
+
+    animation-name: anime;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes anime {
+    0%{
+        background-color: black;
+        color: #bd4108;
+    }
+    100%{
+        background-color: #bd4108;
+        color: white;
+        
+        border-radius: 30%;
+    }
+}
+
+#key0{
+    position: absolute;
+    width: 175px;
+    top: 500px;
+}
+#ponto{
+    position: absolute;
+    top: 500px;
+    left: 205px;
+    width: 83px;
+}
+
+#igual{
+    position: absolute;
+    top: 411px;
+    left: 299px;
+    width: 83px;
+    height: 169px;
+}
+
+
+
+
+
+
+
+
+
+
+
